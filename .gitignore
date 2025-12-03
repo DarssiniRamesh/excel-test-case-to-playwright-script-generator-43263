@@ -61,3 +61,8 @@ core.*
 .core
 *.log
 post_process_status.lock
+
+# Playwright artifacts
+playwright/test-results
+playwright/playwright-report
+playwright/.cache

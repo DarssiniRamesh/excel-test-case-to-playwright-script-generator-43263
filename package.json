@@ -1,0 +1,17 @@
+{
+  "name": "excel-to-playwright-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "playwright"
+  ],
+  "scripts": {
+    "pw:install": "npm --prefix playwright run pw:install",
+    "pw:test": "npm --prefix playwright run pw:test",
+    "pw:test:ui": "npm --prefix playwright run pw:test:ui",
+    "pw:report": "npm --prefix playwright run pw:report",
+    "pw:codegen": "npm --prefix playwright run pw:codegen",
+    "pw:gen": "npm --prefix playwright run pw:gen",
+    "pw:clean": "npm --prefix playwright run pw:clean"
+  }
+}

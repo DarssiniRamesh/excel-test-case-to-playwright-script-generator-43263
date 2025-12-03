@@ -1,0 +1,19 @@
+{
+  "name": "excel-playwright-standalone",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "pw:install": "npx playwright install --with-deps",
+    "pw:test": "npx playwright test",
+    "pw:test:ui": "npx playwright test --ui",
+    "pw:report": "npx playwright show-report",
+    "pw:codegen": "npx playwright codegen ${E2E_BASE_URL:-http://localhost:3000}",
+    "pw:gen": "node scripts/generate-from-excel.mjs",
+    "pw:clean": "rm -rf test-results playwright-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "xlsx": "^0.18.5"
+  }
+}
